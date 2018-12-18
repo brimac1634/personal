@@ -1,0 +1,127 @@
+/*Light Yellow: ffffd2*/
+
+/* ------------------------------------------ */
+/* Basic Setup */
+/*--------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #FFF;
+    color: #503bff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------ */
+/* Reusable components */
+/*--------------------------------------------*/
+
+/*-------HEADINGS---------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #503bff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/*-------------Links----------------*/
+
+a:link,
+a:visited {
+    color: #503bff;
+    text-decoration: none;
+    border-bottom: 1px solid #503bff;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #1a1a1a;
+    border-bottom: 1px solid transparent;
+}
+
+/* ------------------------------------------ */
+/* HEADER */
+/*--------------------------------------------*/
+
+header {
+	background: #ffffd2;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	/*border: 5px solid #8293ff;*/
+}
+
+nav {
+	background: #8293ff;
+}
+
+.logo {
+	height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border: 2px solid #ffffd2;
+}
+
+.main-nav {
+	float: right;
+	list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #503bff;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #503bff;
+    
+}
+
+.portrait {
+	display: block;
+	width: 200px;
+	height: auto;
+	border-radius: 50%;
+	float: left;
+	margin-top: 20px;
+}
