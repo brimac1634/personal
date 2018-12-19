@@ -33,9 +33,9 @@ h3 {
 }
 
 h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #503bff;
+    /*margin-top: 0;
+    margin-bottom: 20px;*/
+    color: #ffffd2;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -49,21 +49,17 @@ h2 {
     letter-spacing: 1px;
 }
 
-/*-------------Links----------------*/
+/*-------------Containers----------------*/
 
-a:link,
-a:visited {
-    color: #503bff;
-    text-decoration: none;
-    border-bottom: 1px solid #503bff;
-    padding-bottom: 1px;
-    transition: border-bottom 0.2s, color 0.2s;
+.col {
+    text-align: center;
+    padding: 100px;
+    vertical-align: middle;
 }
 
-a:hover,
-a:active {
-    color: #1a1a1a;
-    border-bottom: 1px solid transparent;
+section {
+    height: 100vh;
+    margin-top: 100px;
 }
 
 /* ------------------------------------------ */
@@ -71,57 +67,89 @@ a:active {
 /*--------------------------------------------*/
 
 header {
-	background: #ffffd2;
+	background: #503bff;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
-	/*border: 5px solid #8293ff;*/
 }
 
-nav {
-	background: #8293ff;
+.navbar-light {
+    background: #503bff !important; 
+
 }
 
-.logo {
-	height: 100px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-    border: 2px solid #ffffd2;
+.navbar-light .navbar-brand {
+    color: #ffffd2 !important;
+    transition: scale 0.3s;
 }
 
-.main-nav {
-	float: right;
-	list-style: none;
+.navbar-light .navbar-brand:hover {
+    color: #ffffd2 !important;
+    transform: scale(1.1);
 }
 
-.main-nav li {
+.navbar-light .navbar-toggler {
+    background-color: #ffffd2 !important;
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:active {
+    background-color: #ffffd2 !important;
+    border-color: transparent;
+}
+
+.home-container {
+    background: #503bff;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav > li {
     display: inline-block;
-    margin-left: 40px;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-    color: #503bff;
-    padding: 8px 0;
-    text-decoration: none;
+.navbar-light .navbar-nav > li >a:link,
+.navbar-light .navbar-nav > li >a:visited {
+    color: #ffffd2; !important;
     text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid #503bff;
-    
+.navbar-light .navbar-nav > li >a:hover,
+.navbar-light .navbar-nav > li >a:active {
+    color: #ffffd2; !important;
+    border-bottom: 3px solid #ffffd2;
 }
 
-.portrait {
-	display: block;
-	width: 200px;
-	height: auto;
-	border-radius: 50%;
-	float: left;
-	margin-top: 20px;
+
+
+
+#portrait {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    box-shadow: 0px 20px 50px -15px rgba(0, 0, 0, 1);
+    align-content: right;
 }
+
+#portrait:hover {
+    transform: scale(1.2);
+}
+
+.intro-content h1 {
+    color: #ffffd2;
+}
+
+.intro-content p {
+    color: #8293ff;
+}
+
+/* ------------------------------------------ */
+/* Portfolio */
+/*--------------------------------------------*/
+
+
+
