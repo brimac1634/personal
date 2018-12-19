@@ -10,7 +10,7 @@
 }
 
 html {
-    background-color: #FFF;
+    background-color: #503bff;
     color: #503bff;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -58,8 +58,9 @@ h2 {
 }
 
 section {
+    background: #fff;
     height: 100vh;
-    margin-top: 100px;
+    margin: 100px 50px;
 }
 
 /* ------------------------------------------ */
@@ -70,11 +71,11 @@ header {
 	background: #503bff;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+    padding-top: 20px;
 }
 
 .navbar-light {
-    background: #503bff !important; 
+    background: #503bff;
 
 }
 
@@ -123,9 +124,6 @@ header {
     border-bottom: 3px solid #ffffd2;
 }
 
-
-
-
 #portrait {
     height: 300px;
     width: 300px;
@@ -136,7 +134,7 @@ header {
 }
 
 #portrait:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .intro-content h1 {
@@ -151,5 +149,21 @@ header {
 /* Portfolio */
 /*--------------------------------------------*/
 
+#portfolio {
+    margin: 0;
+}
 
+.port-image {
+    overflow: hidden;
+}
+
+#portfolio img {
+    width: 100%;
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}
+
+#portfolio img:hover {
+    transform: scale(1);
+}
 
